@@ -1,6 +1,9 @@
+import Contact from './components/Contact'
 import Hero from './components/Hero'
+import MyResume from './components/MyResume'
 import MySkill from './components/MySkill'
 import Navbar from './components/Navbar'
+import Projects from './components/Projects'
 
 const App = () => {
   return (
@@ -10,6 +13,9 @@ const App = () => {
         <Hero />
       </div>
       <MySkill />
+      <Projects />
+      <MyResume />
+      <Contact />
     </>
   )
 }

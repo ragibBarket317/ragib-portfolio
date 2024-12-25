@@ -75,8 +75,8 @@ const Hero = () => {
           <div className="relative w-[43%] bg-cover bg-center flex justify-center items-center  rounded-[5px]">
             <div className="absolute inset-0 bg-pattern  rounded-[5px]"></div>
 
-            <div className="relative z-10 border rotate-2 border-purple-500 w-[80%] h-[380px] mx-auto rounded-[5px] flex justify-center items-center shadow-2xl">
-              <div className="border border-purple-500 w-[90%]  h-[380px] rotate-[-5deg] mx-auto rounded-[5px] flex justify-center items-center shadow-2xl">
+            <div className="relative z-10 border rotate-2 border-purple-500 w-[80%] h-[380px] mx-auto rounded-[5px] flex justify-center items-center shadow-custom">
+              <div className="border border-purple-500 w-[90%]  h-[380px] rotate-[-5deg] mx-auto rounded-[5px] flex justify-center items-center shadow-custom">
                 <img
                   src="/ragib.png"
                   className="w-[90%] h-[90%] object-cover rounded-[5px] rotate-[5deg]"
