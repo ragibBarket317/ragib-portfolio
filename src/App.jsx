@@ -1,4 +1,5 @@
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import MyResume from './components/MyResume'
 import MySkill from './components/MySkill'
@@ -16,6 +17,7 @@ const App = () => {
       <Projects />
       <MyResume />
       <Contact />
+      <Footer />
     </>
   )
 }
