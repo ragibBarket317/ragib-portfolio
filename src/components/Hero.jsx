@@ -4,16 +4,16 @@ const Hero = () => {
   return (
     <section>
       <div className="py-32 lg:flex lg:flex-col lg:h-screen lg:justify-center">
-        <div className="flex gap-[2%]">
-          <div className="w-[55%]">
+        <div className="flex flex-col lg:flex-row gap-[2%]">
+          <div className="w-full order-2 lg:order-1 lg:w-[55%]">
             <h3 className="text-[14px] tracking-widest uppercase leading-3">
               Welcome to my world
             </h3>
             <motion.h2
-              initial={{ x: -100, opacity: 0 }}
+              initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ ease: 'easeOut', duration: 1.2 }}
-              className="text-[60px] font-bold "
+              transition={{ duration: 0.8 }}
+              className="text-[38px] md:text-[46px] lg:text-[60px]  font-bold "
             >
               Hi, I’m <span className="text-[#ff014f]">Ragib Barket</span>
               <br />
@@ -72,7 +72,7 @@ const Hero = () => {
               </motion.div>
             </motion.div>
           </div> */}
-          <div className="relative w-[43%] bg-cover bg-center flex justify-center items-center  rounded-[5px]">
+          <div className="relative w-full order-1 lg:order-2 lg:w-[43%] bg-cover bg-center flex justify-center items-center rounded-[5px] mb-16 lg:mb-0 ">
             <div className="absolute inset-0 bg-pattern  rounded-[5px]"></div>
 
             <div className="relative z-10 border rotate-2 border-purple-500 w-[80%] h-[380px] mx-auto rounded-[5px] flex justify-center items-center shadow-custom">

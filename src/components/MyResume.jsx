@@ -44,9 +44,9 @@ const MyResume = () => {
               animate="visible"
               exit="exit"
               transition={{ duration: 0.5 }}
-              className="flex justify-between gap-[4%] w-full"
+              className="flex flex-col lg:flex-row md:justify-between gap-10 lg:gap-[4%] w-full"
             >
-              <div className="w-[48%] h-[200px] flex gap-2">
+              <div className="w-full lg:w-[48%] h-[200px] flex gap-2">
                 <div className="flex flex-col items-center w-[5%]">
                   <div className="h-3 w-3 bg-purple-500 rounded-full border-2 border-purple-500"></div>
                   <div className="w-0.5 bg-purple-500 h-[200px]"></div>
@@ -56,7 +56,7 @@ const MyResume = () => {
                   <h2>Heydev Intern</h2>
                 </div>
               </div>
-              <div className="w-[48%] h-[200px] flex gap-2">
+              <div className="w-full lg:w-[48%] h-[200px] flex gap-2">
                 <div className="flex flex-col items-center w-[5%]">
                   <div className="h-3 w-3 bg-purple-500 rounded-full border-2 border-purple-500"></div>
                   <div className="w-0.5 bg-purple-500 h-[200px]"></div>
@@ -73,11 +73,12 @@ const MyResume = () => {
               variants={variants}
               initial="hidden"
               animate="visible"
+              viewport={{ once: true, amount: 0.2 }}
               exit="exit"
               transition={{ duration: 0.5 }}
-              className="flex justify-between gap-[4%] w-full"
+              className="flex flex-col lg:flex-row md:justify-between gap-10 lg:gap-[4%] w-full"
             >
-              <div className="w-[48%] h-[200px] flex gap-2">
+              <div className="w-full lg:w-[48%] h-[200px] flex gap-2">
                 <div className="flex flex-col items-center w-[5%]">
                   <div className="h-3 w-3 bg-green-500 rounded-full border-2 border-green-500"></div>
                   <div className="w-0.5 bg-green-500 h-[200px]"></div>
@@ -87,7 +88,7 @@ const MyResume = () => {
                   <h2>Prime University</h2>
                 </div>
               </div>
-              <div className="w-[48%] h-[200px] flex gap-2">
+              <div className="w-full lg:w-[48%] h-[200px] flex gap-2">
                 <div className="flex flex-col items-center w-[5%]">
                   <div className="h-3 w-3 bg-green-500 rounded-full border-2 border-green-500"></div>
                   <div className="w-0.5 bg-green-500 h-[200px]"></div>

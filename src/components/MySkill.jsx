@@ -16,15 +16,15 @@ const MySkill = () => {
         >
           My Skills
         </motion.h2>
-        <div className="flex justify-between gap-10 ">
+        <div className="flex flex-col lg:flex-row md:items-center lg:justify-between gap-10 ">
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="border-purple-500 border w-[60%] h-[250px] rounded shadow-2xl bg-[#212428] p-8"
+            className="border-purple-500 border w-full md:w-[80%] lg:w-[60%] lg:h-[250px] rounded shadow-2xl bg-[#212428] p-8"
           >
             <h2 className="text-2xl font-bold">Frontend</h2>
-            <div className="grid grid-cols-[1fr_1fr_1fr] gap-4 mt-4">
+            <div className="grid grid-cols-2 md:grid-cols-[1fr_1fr_1fr] gap-4 mt-4">
               <div className="flex items-center gap-2 border rounded-lg p-2">
                 <img src="/html5.png" className="w-8 h-8" alt="" />
                 <p>HTML</p>
@@ -55,10 +55,10 @@ const MySkill = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="border-purple-500 border w-[60%] h-[250px] rounded bg-[#212428] p-8"
+            className="border-purple-500 border w-full md:w-[80%] lg:w-[60%] md:h-[250px] rounded bg-[#212428] p-8"
           >
             <h2 className="text-2xl font-bold">Backend</h2>
-            <div className="grid grid-cols-[1fr_1fr_1fr] gap-4 mt-4">
+            <div className="grid grid-cols-2  md:grid-cols-[1fr_1fr_1fr] gap-4 mt-4">
               <div className="flex items-center gap-2 border rounded-lg p-2">
                 <img src="/node.png" className="w-8 h-8 " alt="" />
                 <p>NODE JS</p>
@@ -91,10 +91,10 @@ const MySkill = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="border-purple-500 border w-[60%] h-[250px] rounded bg-[#212428] p-8 mt-11"
+            className="border-purple-500 border w-full md:w-[80%] lg:w-[60%] lg:h-[250px] rounded bg-[#212428] p-8 mt-11"
           >
             <h2 className="text-2xl font-bold">Others</h2>
-            <div className="grid grid-cols-[1fr_1fr_1fr] gap-4 mt-4">
+            <div className="grid grid-cols-2 md:grid-cols-[1fr_1fr_1fr] gap-4 mt-4">
               <div className="flex items-center gap-2 border rounded-lg p-2">
                 <img src="/git.png" className="w-8 h-8 " alt="" />
                 <p>GIT</p>
