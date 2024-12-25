@@ -12,7 +12,7 @@ const MyResume = () => {
   }
 
   return (
-    <div className="py-[80px]">
+    <div id="resume" className="py-[80px]">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-[44px] font-bold">My Resume</h2>
         <div className="text-center mt-10">

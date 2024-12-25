@@ -46,7 +46,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="py-[80px]">
+    <div id="contact" className="py-[80px]">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-[44px] font-bold">Contact With Me</h2>
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-[4%] mt-10">
@@ -70,7 +70,7 @@ const Contact = () => {
                 <p className="p-2 bg-black rounded-full">
                   <FaRegEnvelope className="w-5 h-5" />
                 </p>
-                <p className="">ragibrahman86217@gmail.com</p>
+                <p className="">ragibrahman86317@gmail.com</p>
               </div>
               <div className="flex items-center gap-2 mt-4">
                 <p className="p-2 bg-black rounded-full">

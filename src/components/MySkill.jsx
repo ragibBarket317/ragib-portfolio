@@ -1,17 +1,14 @@
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { motion } from 'framer-motion'
 
 const MySkill = () => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
   return (
-    <div ref={ref} className="py-[80px] rounded-bl-[15%]   bg-skills">
+    <div id="skills" className="py-[80px] rounded-bl-[15%]   bg-skills">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ y: 100, opacity: 0 }}
-          animate={isInView ? { y: 0, opacity: 1 } : {}}
-          // Triggers every time it comes into view
-          transition={{ duration: 0.8 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.4 }}
           className="text-center text-[44px] font-bold mb-10"
         >
           My Skills
@@ -19,8 +16,9 @@ const MySkill = () => {
         <div className="flex flex-col lg:flex-row md:items-center lg:justify-between gap-10 ">
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-            animate={isInView ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6 }}
             className="border-purple-500 border w-full md:w-[80%] lg:w-[60%] lg:h-[250px] rounded shadow-2xl bg-[#212428] p-8"
           >
             <h2 className="text-2xl font-bold">Frontend</h2>
@@ -53,8 +51,9 @@ const MySkill = () => {
           </motion.div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-            animate={isInView ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
             className="border-purple-500 border w-full md:w-[80%] lg:w-[60%] md:h-[250px] rounded bg-[#212428] p-8"
           >
             <h2 className="text-2xl font-bold">Backend</h2>
@@ -89,8 +88,9 @@ const MySkill = () => {
         <div className="flex justify-center">
           <motion.div
             initial={{ y: 100, opacity: 0 }}
-            animate={isInView ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1 }}
             className="border-purple-500 border w-full md:w-[80%] lg:w-[60%] lg:h-[250px] rounded bg-[#212428] p-8 mt-11"
           >
             <h2 className="text-2xl font-bold">Others</h2>
