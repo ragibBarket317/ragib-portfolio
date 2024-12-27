@@ -2,7 +2,7 @@ import { FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { motion } from 'motion/react'
 const Hero = () => {
   return (
-    <section>
+    <section id="home">
       <div className="py-32 lg:flex lg:flex-col lg:h-screen lg:justify-center">
         <div className="flex flex-col lg:flex-row gap-[2%]">
           <div className="w-full order-2 lg:order-1 lg:w-[55%]">
@@ -35,7 +35,9 @@ const Hero = () => {
                     transition={{ type: 'spring', stiffness: 400, damping: 10 }}
                     className="w-10 h-10 flex justify-center items-center bg-black shadow-2xl"
                   >
-                    <FaFacebookF />
+                    <a href="https://www.facebook.com/rb.ragib" target="_blank">
+                      <FaFacebookF />
+                    </a>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.1 }}
@@ -43,11 +45,23 @@ const Hero = () => {
                     transition={{ type: 'spring', stiffness: 400, damping: 10 }}
                     className="w-10 h-10 flex justify-center items-center bg-black shadow-2xl"
                   >
-                    <FaGithub />
+                    <a href="https://github.com/ragibBarket317" target="_blank">
+                      <FaGithub />
+                    </a>
                   </motion.div>
-                  <div className="w-10 h-10 flex justify-center items-center bg-black shadow-2xl">
-                    <FaLinkedin />
-                  </div>
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+                    className="w-10 h-10 flex justify-center items-center bg-black shadow-2xl"
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/ragib-barket-a6b675215"
+                      target="_blank"
+                    >
+                      <FaLinkedin />
+                    </a>
+                  </motion.div>
                 </div>
               </div>
             </div>

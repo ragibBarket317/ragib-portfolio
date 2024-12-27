@@ -7,7 +7,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the scroll position is greater than the height of the viewport
       if (window.scrollY > window.innerHeight) {
         setIsScrolled(true)
       } else {
@@ -36,7 +35,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <h2 className="text-2xl font-bold text-white">
-              <a href="/">Ragib Barket</a>
+              <a href="#home">Ragib Barket</a>
             </h2>
           </div>
 

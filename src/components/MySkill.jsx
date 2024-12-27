@@ -32,7 +32,7 @@ const MySkill = () => {
                 <p>CSS</p>
               </div>
               <div className="flex items-center gap-2 border rounded-lg p-2">
-                <img src="/tailwind.png" className="w-8 h-8" alt="" />
+                <img src="/tailwind.svg" className="w-8 h-8" alt="" />
                 <p>TAILWIND CSS</p>
               </div>
               <div className="flex items-center gap-2 border rounded-lg p-2">
@@ -112,7 +112,7 @@ const MySkill = () => {
                 <p>AXIOS</p>
               </div>
               <div className="flex items-center gap-2 border rounded-lg p-2">
-                <img src="/figma.png" className="w-8 h-8 object-cover" alt="" />
+                <img src="/figma.svg" className="w-8 h-8 object-cover" alt="" />
                 <p>FIGMA</p>
               </div>
               <div className="flex items-center gap-2 border rounded-lg p-2">
